@@ -13,16 +13,17 @@
     <h1>
       Tech Blog 5000
     </h1>
-    <nav>
-      <ul>
-        <li>
-          <a class = "link" href="/">Home</a> 
-        </li>
-        <li>
-          <a class = "link" href="/dashboard">Dashboard</a> 
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <nav class="nav">
+        <a class="link" href="/">Home</a>
+        <a class="link" href="/dashboard">Dashboard</a>
+        {{#if loggedIn}}
+        <a class="link" href="/" id="logout">Logout</a>
+        {{else}}
+        <a class="link" href="/login">Login</a>
+        {{/if}}
+      </nav>
+    </div>
     {{#if logged_in}}
     <nav>
       <button class="btn" id="logout">logout</button>
@@ -33,7 +34,7 @@
     {{{ body }}}
   </main>
   <footer>
-      
+
   </footer>
 
   {{#if logged_in}}
