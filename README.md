@@ -80,8 +80,8 @@ THEN I am automatically signed out of the site
 ```
 
 ## Screenshots
-
+![screenshot of deployment](assest/images/Screenshot-of-deployed.png)
 
 
 ## deployed link
-
+https://tech-blog5000.herokuapp.com/
